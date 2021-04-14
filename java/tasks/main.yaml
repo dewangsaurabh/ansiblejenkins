@@ -1,0 +1,3 @@
+- name: installing java
+  become: true
+  shell: sudo apt install openjdk-8-jdk -y

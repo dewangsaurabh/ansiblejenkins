@@ -1,0 +1,12 @@
+- name: Update all packages  
+  hosts: localhost
+  become: true
+  tasks:
+  - name: updating packages
+    command: sudo apt-get update -y
+
+- hosts: localhost
+  become: true
+  roles:
+    - git
+    - jenkins
