@@ -3,4 +3,4 @@
   shell: sudo apt install openjdk-8-jdk -y
 - name: installing maven
   become: true
-  shell: sudo apt install maven
+  shell: sudo apt install maven -y
